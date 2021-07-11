@@ -1,6 +1,6 @@
 # LIZA KHVESKO 
 
-! [avatar] (/programming/IMG_2325.JPG)   
+![IMG_2325](https://user-images.githubusercontent.com/84271169/125203790-b679e600-e282-11eb-8302-b143b8dd34ea.JPG)   
 
 *City:* Minsk    
 *Mobile phone:* +375(29)1392506    
