@@ -1,5 +1,7 @@
 # LIZA KHVESKO 
 
+! [avatar] (/programming/IMG_2325.JPG)   
+
 *City:* Minsk    
 *Mobile phone:* +375(29)1392506    
 *Email:* khveskoliza@tut.by     
@@ -44,6 +46,6 @@ function alphabetPosition(text) {
 
 ## English
 
-B2 (upper-intermediate)
+B2 (upper-intermediate)  
 "Streamline", "International House" schools
 
