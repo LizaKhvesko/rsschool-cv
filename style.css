@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 16pt;
+}
+
+.container,
+.footer {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: #d3d6dd;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  margin-bottom: -30px;
+}
+
+.info {
+  margin-right: 200px;
+}
+
+.avatar {
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+.name {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 55px;
+  line-height: 46px;
+  color: rgb(15, 99, 19);
+  margin-bottom: 30px;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 30px;
+  line-height: 35px;
+  color: #302c34;
+  padding-left: 70px;
+}
+
+.telephone,
+.mail,
+.city,
+.github {
+  max-width: 15px;
+}
+
+.account {
+  text-decoration: none;
+  color: #302c34;
+}
+
+.summary {
+  padding: 40px;
+  margin-bottom: -50px;
+}
+
+.title-summary {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 46px;
+  color: rgb(15, 99, 19);
+  margin-bottom: 30px;
+  padding-left: 40%;
+}
+
+.text-summary {
+  font-style: normal;
+  font-size: 25px;
+  line-height: 35px;
+  color: #302c34;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.card {
+  flex-basis: 40%;
+}
+
+.add-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skills {
+  padding-left: 40px;
+  margin-bottom: 30px;
+}
+
+.skills-title,
+.education-title,
+.code-title,
+.english-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+  color: rgb(15, 99, 19);
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li,
+.english-text {
+  font-style: normal;
+  font-size: 20px;
+  line-height: 35px;
+  color: #302c34;
+}
+
+.html,
+.css,
+.js {
+  width: 20px;
+}
+
+.education {
+  margin-top: -15px;
+  margin-right: 150px;
+}
+
+.education-title {
+  padding-left: 250px;
+}
+
+span {
+  background-color: rgb(179, 207, 181);
+  padding: 5px;
+  border-radius: 20%;
+}
+
+.code {
+  margin-top: 40px;
+}
+.code-title {
+  padding-left: 30px;
+}
+
+.code-image {
+  max-width: 500px;
+}
+
+.english {
+  background-color: rgb(179, 207, 181);
+  margin-right: 150px;
+  margin-top: 40px;
+}
+
+.english-text {
+  padding: 20px;
+  text-align: center;
+  padding-top: 0;
+}
+
+.english-title {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.school-logo {
+  width: 200px;
+}
+
+.footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(121, 111, 111, 0.39);
+  padding: 20px;
+}
+
+.github-link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+  color: black;
+  margin-right: 130px;
+  padding-top: 20px;
+  vertical-align: center;
+}
+
+.year {
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+  color: black;
+  padding-top: 20px;
+  vertical-align: center;
+}
