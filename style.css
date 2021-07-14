@@ -74,7 +74,6 @@ body {
   font-size: 40px;
   line-height: 46px;
   color: rgb(15, 99, 19);
-  margin-bottom: 30px;
   padding-left: 40%;
 }
 
@@ -84,7 +83,7 @@ body {
   line-height: 35px;
   color: #302c34;
   text-align: justify;
-  margin-bottom: 30px;
+  margin: 30px 50px;
 }
 
 .card {
@@ -96,6 +95,7 @@ body {
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-left: 60px;
 }
 
 .skills {
@@ -135,12 +135,12 @@ li,
 }
 
 .education {
-  margin-top: -15px;
+  margin-top: 30px;
   margin-right: 150px;
 }
 
 .education-title {
-  padding-left: 250px;
+  text-align: center;
 }
 
 span {
