@@ -162,7 +162,6 @@ ul {
 
 .school-logo {
   width: 200px;
-  margin-left: 50px;
 }
 
 .footer {
@@ -183,13 +182,11 @@ ul {
   font-size: 30px;
   line-height: 45px;
   color: black;
-  margin-right: 130px;
   padding-top: 20px;
   vertical-align: center;
 }
 
 .year {
-  margin-right: 20px;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -197,5 +194,104 @@ ul {
   color: black;
   padding-top: 20px;
   vertical-align: center;
-  margin-right: 50px;
+}
+
+@media (max-width: 992px) {
+  #skills {
+    margin-right: 50px;
+  }
+  .html-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    flex-wrap: wrap;
+    margin-left: 40px;
+    line-height: 30px;
+  }
+
+  .school-logo {
+    width: 150px;
+  }
+
+  .wrapper,
+  .footer-block {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 578px) {
+  .avatar {
+    width: 200px;
+    margin-left: 0;
+  }
+
+  .school-logo {
+    width: 100px;
+    margin-top: 20px;
+  }
+
+  .github-link {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .wrapper,
+  .footer-block {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .name {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .avatar {
+    width: 100px;
+  }
+
+  .contacts-name,
+  .title-summary {
+    font-size: 30px;
+  }
+  .school-logo {
+    margin-left: -30px;
+  }
+
+  .github-link {
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper,
+  .footer-block {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .avatar {
+    margin-right: 20px;
+  }
+
+  .school-logo {
+    width: 80px;
+    margin-left: -25px;
+  }
+
+  .github-link {
+    font-size: 20px;
+  }
+
+  .year {
+    font-size: 20px;
+  }
 }
