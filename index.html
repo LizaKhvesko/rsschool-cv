@@ -5,12 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>CV Khvesko Liza</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
-    <header class="header container">
-        <img src="img/avatar.png" alt="avatar" class="avatar">
-        <div class="info">
+    <div class="wrapper">
+        <header class="header">
             <h1 class="name">Liza Khvesko</h1>
+            <nav class="navigation">
+                <a href="#info" class="nav-item">Info</a>
+                <a href="#summary" class="nav-item">Summary</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#education" class="nav-item">Education</a>
+                <a href="#code" class="nav-item">Code</a>
+                <a href="#english" class="nav-item">English</a>
+            </nav>
+        </header>
+    <main>
+        <div id="info">
+           <aside class="avatar">
+            <img src="img/avatar.png" alt="avatar" class="avatar">
+           </aside>
+           <section class="add-info">
+            <h2 class = "contacts-name">Contacts</h2>
             <ul class="contacts">
                 <li>
                     <img src="img/telephone.png" alt="telephone" class="telephone">
@@ -29,69 +47,80 @@
                     <a href="https://github.com/LizaKhvesko" target="_blank" class="account">LizaKhvesko</a>
                 </li>
             </ul>
+           </section>
         </div>
-    </header>
-
-    <main class="container">
-       
-        <section class="summary">
+        <section id="summary">
             <h2 class="title-summary">Summary</h2>
             <p class="text-summary">
                 I believe that it's never too late to learn something new. I want to change radically the scope of my activity.
                 My main goal is to become a front-end developer. Currently working as marketing specialist.
                 Ability to learn quickly, commitment, stress resistance, discipline, accuracy, good team player.
-                 </p>
+            </p>
         </section>
-
-        <section class="add-info">
-            <div class="skills card">
-                <h3 class="skills-title">Skills</h3>
-            <ul>
-                <li>
-                    <img src="img/html.svg" alt="html" class="html">
-                    HTML
-                </li>
-                <li>
-                    <img src="img/css.png" alt="css" class="css">
-                    CSS
-                </li>
-                <li>
-                    <img src="img/js.png" alt="js" class="js">
-                    JS
-                </li>
-            </ul>
-            </div>
-
-            <div class="education card">
+        <div class="skills-education">
+            <section id="skills">
+                <div class="skills">
+                    <h3 class="skills-title">Skills</h3>
+                    <ul>
+                        <li>
+                            <div class="html-block">
+                                <img src="img/html.svg" alt="html" class="html">HTML
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/css.png" alt="css" class="css">
+                            CSS
+                        </li>
+                        <li>
+                            <img src="img/js.png" alt="js" class="js">
+                            JS
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="education">
                 <h3 class="education-title">Education</h3>
-            <ul>
-                <li><span>2009-2014</span> Belorussian State Economic University (cybernetic-economist)</li>
-                <li><span>2021</span> <i>Self-study:</i> HTML-academy, Codebra, CodeAcademy, CodeWars</li>
-                <li><span>2021</span> "JavaScript / DOM / Interfaces" courses for beginners</li>
-            </ul>
+                <ul class="education-list">
+                    <li><span>2009-2014</span> Belorussian State Economic University (cybernetic-economist)</li>
+                    <li><span>2021</span> <i>Self-study:</i> HTML-academy, Codebra, CodeAcademy, CodeWars</li>
+                    <li><span>2021</span> "JavaScript / DOM / Interfaces" courses for beginners</li>
+                    <li><span>2021</span> RSSchool. Stage 0. 397,4 points</li>
+                </ul>
+            </section>
+        </div>
+        <section id="code">
+            <h2 class="code-title">Code Examples</h2>
+            <div class="codes">
+                <pre><code class="language-js">
+        function explode(s) {
+        return s.split("").map((e) => e.repeat(+e)).join("");}
+                </code></pre>
+                <pre><code class="language-js">
+        function maxSum(root) {
+        if (root == null) {
+        return 0;}
+        return root.value + Math.max(maxSum(root.left), maxSum(root.right));}
+                </code></pre>
             </div>
-
-            <div class="code card">
-                <h3 class="code-title">Code Example</h3>
-                <img src="img/code.png" alt="code" class="code-image">
-            </div>
-
-            <article class="english card">
-                <h3 class="english-title">English</h3>
-                <p class = "english-text">B2 (upper-intermediate) <br>
-                     "Streamline", "International House" schools</p>
-            </article>
         </section>
+        <article id="english">
+            <h3 class="english-title">English</h3>
+            <p class="english-text">B2 (upper-intermediate)
+                "Streamline", "International House" schools + TV-Series "Friends" (original) #onelove</p>
+        </article>
+
     </main>
-
+    </div>
     <footer class="footer">
-        <a href="https://rs.school/js/" class="school">
-        <img src="img/rs_school_js.svg" alt="rsp-school" class="school-logo">
-        </a>
-
-        <a href="https://github.com/LizaKhvesko" class="github-link">Follow me on GitHub</a>
-
-        <p class="year">2021</p>
+        <div class="footer-block">
+            <a href="https://rs.school/js/" class="school">
+                <img src="img/rs_school_js.svg" alt="rsp-school" class="school-logo">
+            </a>
+            
+            <a href="https://github.com/LizaKhvesko" class="github-link">Follow me on GitHub</a>
+            
+            <p class="year">2021</p>
+        </div>
     </footer>
 </body>
 </html>

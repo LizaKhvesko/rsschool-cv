@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,11 +9,10 @@
   font-size: 16pt;
 }
 
-.container,
-.footer {
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
+.wrapper,
+.footer-block {
+  margin-right: 100px;
+  margin-left: 100px;
 }
 
 body {
@@ -21,17 +23,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 30px;
-  margin-bottom: -30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.info {
-  margin-right: 200px;
-}
-
-.avatar {
-  max-width: 300px;
-  border-radius: 50%;
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 10pt;
 }
 
 .name {
@@ -39,8 +39,35 @@ body {
   font-weight: bold;
   font-size: 55px;
   line-height: 46px;
-  color: rgb(15, 99, 19);
-  margin-bottom: 30px;
+  color: rgb(61, 90, 59);
+}
+
+.nav-item {
+  text-decoration: none;
+  color: grey;
+  margin-right: 15px;
+}
+
+#info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+.avatar {
+  max-width: 300px;
+  border-radius: 50%;
+  margin-left: -50px;
+}
+
+.contacts-name,
+.title-summary {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 46px;
+  margin-bottom: 20px;
 }
 
 .contacts {
@@ -48,7 +75,6 @@ body {
   font-size: 30px;
   line-height: 35px;
   color: #302c34;
-  padding-left: 70px;
 }
 
 .telephone,
@@ -63,132 +89,90 @@ body {
   color: #302c34;
 }
 
-.summary {
-  padding: 40px;
-  margin-bottom: -50px;
+.telephone,
+.mail,
+.city,
+.github {
+  max-width: 15px;
+}
+
+li {
+  list-style-type: none;
+}
+ul {
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .title-summary {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 46px;
-  color: rgb(15, 99, 19);
-  padding-left: 40%;
+  text-align: center;
 }
 
-.text-summary {
+.text-summary,
+.education-list,
+.english-text {
   font-style: normal;
-  font-size: 25px;
-  line-height: 35px;
+  font-size: 20px;
+  line-height: 30px;
   color: #302c34;
   text-align: justify;
-  margin: 30px 50px;
 }
 
-.card {
-  flex-basis: 40%;
-}
-
-.add-info {
+.skills-education {
+  margin-top: 40px;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: space-around;
-  margin-left: 60px;
-}
-
-.skills {
-  padding-left: 40px;
-  margin-bottom: 30px;
 }
 
 .skills-title,
 .education-title,
 .code-title,
 .english-title {
+  margin-bottom: 20px;
+  text-align: center;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
-  line-height: 45px;
-  color: rgb(15, 99, 19);
-  margin-bottom: 15px;
-  margin-left: 15px;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li,
-.english-text {
-  font-style: normal;
-  font-size: 20px;
-  line-height: 35px;
-  color: #302c34;
-}
-
-.html,
-.css,
-.js {
-  width: 20px;
-}
-
-.education {
-  margin-top: 30px;
-  margin-right: 150px;
+  font-size: 25px;
+  line-height: 46px;
 }
 
 .education-title {
-  text-align: center;
+  margin-top: -15px;
 }
 
-span {
-  background-color: rgb(179, 207, 181);
-  padding: 5px;
-  border-radius: 20%;
-}
-
-.code {
+#code {
   margin-top: 40px;
-}
-.code-title {
-  padding-left: 30px;
+  margin-bottom: 40px;
 }
 
-.code-image {
-  max-width: 500px;
-}
-
-.english {
-  background-color: rgb(179, 207, 181);
-  margin-right: 150px;
-  margin-top: 40px;
+.codes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .english-text {
-  padding: 20px;
   text-align: center;
-  padding-top: 0;
 }
 
-.english-title {
-  text-align: center;
-  padding: 20px;
-  padding-bottom: 0;
+.language-html {
+  font-size: 10px;
 }
 
 .school-logo {
   width: 200px;
-  margin-left: 50px;
 }
 
 .footer {
   margin-top: 30px;
-  display: flex;
-  justify-content: space-between;
   background-color: rgba(121, 111, 111, 0.39);
   padding: 20px;
+}
+
+.footer-block {
+  display: flex;
+  justify-content: space-between;
 }
 
 .github-link {
@@ -198,13 +182,11 @@ span {
   font-size: 30px;
   line-height: 45px;
   color: black;
-  margin-right: 130px;
   padding-top: 20px;
   vertical-align: center;
 }
 
 .year {
-  margin-right: 20px;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -212,5 +194,120 @@ span {
   color: black;
   padding-top: 20px;
   vertical-align: center;
-  margin-right: 50px;
+}
+
+.codes * {
+  font-size: 15px;
+  line-height: 25px;
+  color: black;
+}
+
+@media (max-width: 992px) {
+  #skills {
+    margin-right: 50px;
+  }
+  .html-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    flex-wrap: wrap;
+    margin-left: 40px;
+    line-height: 30px;
+  }
+
+  .codes {
+    flex-wrap: wrap;
+  }
+
+  .school-logo {
+    width: 150px;
+  }
+
+  .wrapper,
+  .footer-block {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 578px) {
+  .avatar {
+    width: 200px;
+    margin-left: 0;
+  }
+
+  .school-logo {
+    width: 100px;
+    margin-top: 20px;
+  }
+
+  .github-link {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .wrapper,
+  .footer-block {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+
+  .codes * {
+    font-size: 10px;
+    line-height: 15px;
+    color: black;
+  }
+
+  .name {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .avatar {
+    width: 100px;
+  }
+
+  .contacts-name,
+  .title-summary {
+    font-size: 30px;
+  }
+  .school-logo {
+    margin-left: -30px;
+  }
+
+  .github-link {
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper,
+  .footer-block {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .avatar {
+    margin-right: 20px;
+  }
+
+  .school-logo {
+    width: 80px;
+    margin-left: -25px;
+  }
+
+  .github-link {
+    font-size: 20px;
+  }
+
+  .year {
+    font-size: 20px;
+  }
 }
