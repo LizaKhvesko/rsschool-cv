@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>CV Khvesko Liza</title>
-    <link rel="stylesheet" href="/lizakhvesko/highlight/styles/default.css">
-    <script src="/lizakhvesko/highlight/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
     <div class="wrapper">
@@ -84,17 +84,23 @@
                     <li><span>2009-2014</span> Belorussian State Economic University (cybernetic-economist)</li>
                     <li><span>2021</span> <i>Self-study:</i> HTML-academy, Codebra, CodeAcademy, CodeWars</li>
                     <li><span>2021</span> "JavaScript / DOM / Interfaces" courses for beginners</li>
+                    <li><span>2021</span> RSSchool. Stage 0. 397,4 points</li>
                 </ul>
             </section>
         </div>
         <section id="code">
             <h2 class="code-title">Code Examples</h2>
             <div class="codes">
-                <pre><code class="language-html">
-               
+                <pre><code class="language-js">
+        function explode(s) {
+        return s.split("").map((e) => e.repeat(+e)).join("");}
                 </code></pre>
-                <pre><code class="language-html">
-                
+                <pre><code class="language-js">
+        function maxSum(root) {
+        if (root == null) {
+        return 0;}
+        return root.value + Math.max(maxSum(root.left), maxSum(root.right));}
+                </code></pre>
             </div>
         </section>
         <article id="english">
